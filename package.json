@@ -1,0 +1,47 @@
+{
+    "name": "genese",
+    "version": "0.2.3",
+    "scripts": {
+        "dev": "tsc && node dev.js",
+        "replace": "tsc && npm unpublish genese@0.2.3 --force && npm publish && npm i -g genese"
+    },
+    "author": {
+        "name": "Gilles Fabre",
+        "url": "http://gillesfabre.com/"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/geneseframework/genese"
+    },
+    "bin": {
+        "genese": "index.js"
+    },
+    "dependencies": {
+        "@types/node": "^13.11.1",
+        "ansi-colors": "^4.1.1",
+        "chalk": "^4.0.0",
+        "chart.js": "^2.9.3",
+        "commander": "^5.0.0",
+        "eol": "^0.9.1",
+        "fs-extra": "^9.0.0",
+        "genese-mapper": "^1.0.6",
+        "handlebars": "^4.7.6",
+        "java-ast": "^0.3.0",
+        "java-parser": "0.6.0",
+        "paths": "^0.1.1",
+        "prismjs": "^1.20.0",
+        "ts-morph": "^7.1.2"
+    },
+    "devDependencies": {},
+    "jscpd": {
+        "threshold": 3,
+        "reporters": [
+            "html",
+            "console"
+        ],
+        "ignore": [],
+        "absolute": true,
+        "gitignore": true
+    }
+}
